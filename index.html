@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"><!-- Link to your CSS -->
+    <!-- Include Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<header>
+    <div id="logo">
+        <i class="fas fa-code"></i>
+        <h1>Rorisang  Mokati</h1>
+    </div>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm Rorisang Mokati, a Software Developer passionate about building cool projects.</p>
+</header>
+
+<body>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Project 1: Awesome Web App</h3>
+            <p>Description of the project, what you built, and the technologies you used.</p>
+            <a href="https://github.com/username/project1" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 2: Another Cool Project</h3>
+            <p>Description of the project, what you built, and the technologies you used.</p>
+            <a href="https://github.com/username/project2" target="_blank">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Project 3: Yet Another Project</h3>
+            <p>Description of the project, what you built, and the technologies you used.</p>
+            <a href="https://github.com/username/project3" target="_blank">View on GitHub</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="skill-bar">
+                <div class="progress" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="skill-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Contact me at: <a href="mailto:rorisang.mokati@gmail.com">rorisang.mokati@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/rorisang-mokati-b131a7102/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/projects" target="_blank" class="social-link">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://twitter.com/username" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://www.instagram.com/username" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+        </div>
+    </footer>
+</body>
+<style>
+    body {
+        background-color: rgb(1, 55, 73);
+    }
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        background-color: #f0f8ff;
+        color: #333;
+    }
+
+       
+</style>
+<script>
+    // Toggle Dark Mode
+    const toggleButton = document.getElementById("toggle-theme");
+    const body = document.body;
+
+    toggleButton.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+    });
+</script>
+<button id="back-to-top">↑</button>
+
+<style>
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        background-color: #013749;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #logo h1 {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+    }
+</style>
+<style>
+    #logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
+        width: 150px;
+        height: 150px;
+        background: linear-gradient(135deg, #1fa2ff, #8ec5fc);
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    #logo h1 {
+        font-family: 'Roboto', Arial, sans-serif;
+        font-size: 28px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        z-index: 1;
+        text-align: center;
+        margin: 0;
+    }
+
+    #logo:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+</style>
+</html>

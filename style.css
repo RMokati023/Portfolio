@@ -1,0 +1,353 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures consistent box model across elements */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333333;
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
+}
+
+/* Header Section */
+header {
+    background-color: #0078d7;
+    color: #fff;
+    padding: 40px 10%;
+    text-align: center;
+    border-bottom: 4px solid #0056a3;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Projects Section */
+section#projects {
+    padding: 40px 10%;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section#projects h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0078d7;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    margin: 15px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.project a {
+    text-decoration: none;
+    color: #0078d7;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Skill Bars Section */
+.skill-bar {
+    background-color: #e4e4e4;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+    margin: 10px 0;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+    height: 100%;
+    background-color: #0078d7;
+    animation: growBar 1.5s ease-out;
+    border-radius: 10px;
+    /* Ensures consistent rounded edges */
+}
+
+@keyframes growBar {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10%;
+}
+
+footer a {
+    color: #0078d7;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social-media {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+}
+
+footer .social-media a {
+    text-decoration: none;
+    color: #0078d7;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #0056a3;
+}
+
+footer .social-media i {
+    margin-right: 5px;
+}
+
+/* Back-to-Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0078d7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s;
+}
+
+#back-to-top:hover {
+    background: #0056a3;
+    transform: scale(1.1);
+    /* Adds a slight zoom effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section#projects {
+        padding: 20px 5%;
+    }
+
+    .social-media {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+:root {
+    --bg-color: #f0f8ff;
+    --text-color: #333;
+    --header-bg: #0078d7;
+    --header-text: white;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body.dark-mode {
+    --bg-color: #333;
+    --text-color: #f0f8ff;
+    --header-bg: #555;
+    --header-text: #ddd;
+}
+
+/* Default Light Mode */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f0f8ff;
+}
+
+body.dark-mode header {
+    background-color: #333;
+    color: #f0f8ff;
+}
+
+body.dark-mode .project {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #f0f8ff;
+}
+
+body.dark-mode a {
+    color: #80d4ff;
+}
+
+body.dark-mode #toggle-theme {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+body.dark-mode #toggle-theme:hover {
+    background-color: #ddd;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #013749, #1fa2ff);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+#logo h1 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;/* Adds spacing between letters */
+    z-index: 1;
+    transition: color 0.3s ease-in-out;/* Keep the text above the effects */
+    text-align: center;
+    margin: 0;
+
+}
+
+#logo::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: pulse 2s infinite ease-in-out;
+    top: -15px;
+    left: -15px;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+#logo i {
+    font-size: 48px;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+    /* Faint icon behind the text */
+}
+
+#logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+#logo h1:hover {
+    color: #1fa2ff;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease-in-out;
+}
